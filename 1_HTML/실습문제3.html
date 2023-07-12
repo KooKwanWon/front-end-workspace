@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>주문하기</h1>
+    <form method="POST">
+        <label for="name">고객명 :</label>
+        <input type="text" id="name" name="name">
+
+        <br><br>
+        <label for="phone">전화번호 :</label>
+        <input type="tel" id="phone" name="phone">
+
+        <br><br>
+        <label for="email">E-mail :</label>
+        <input type="email" id="email" name="email">
+    
+        <br><br>
+                
+        <fieldset>
+            <legend>피자 사이즈</legend>
+            <input type="radio" name=size id="s" value="S">
+            <label for="s">Small</label>
+              
+            <br><br>
+            <input type="radio" name=size id="m" value="M">
+            <label for="m">Medium</label>
+
+            <br><br>
+            <input type="radio" name=size id="l" value="L">
+            <label for="l">Large</label>
+
+        </fieldset>
+
+        <fieldset>
+            <legend>토핑 선택</legend>
+            <input type="checkbox" name=tp id="bc" value="bc">
+            <label for="bc">베이컨</label>
+              
+            <br><br>
+            <input type="checkbox" name=tp id="ch" value="ch">
+            <label for="ch">치즈</label>
+
+            <br><br>
+            <input type="checkbox" name=tp id="on" value="on">
+            <label for="on">양파</label>
+
+            <br><br>
+            <input type="checkbox" name=tp id="ms" value="ms">
+            <label for="ms">버섯</label>
+
+        </fieldset>
+        <br>
+           
+        희망 배송 시간 : 
+        <input type="time" name="time" id="time">
+        <br>
+        <br>
+
+        배송 시 요청사항 :
+        <br>
+        <textarea name="textarea" id="textarea" cols="22" rows="8" style="resize:none;" placeholder="내용을 입력하세요"></textarea>
+        
+        <br><br>
+        <button>주문하기</button>
+       
+    </form>
+        
+</body>
+</html>
