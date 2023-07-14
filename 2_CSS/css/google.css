@@ -1,0 +1,94 @@
+/* font-family */
+
+.ff1{
+    font-family: 궁서체;
+}
+
+.ff2{
+    font-family: 고딕체;
+}
+
+.ff2{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.ff4{
+    font-family: 'Roboto', sans-serif;
+}
+
+
+/* font-size */
+
+.fs{
+    font-size: 100px;
+}
+
+.fs1{
+    font-size: 30px;
+}
+
+.fs2{
+    font-size: 2em;
+}
+
+.fs3{
+    font-size: 2rem;    /* 16*2 = 32px */
+}
+
+.fs4{
+    font-size: 150%;
+}
+
+
+/* font-weight */
+
+.fw1{
+    font-weight: bold;
+}
+
+.fw2{
+    font-weight: bolder;    /* 크기 : 900 */
+}
+
+.fw3{
+    font-weight: lighter;   /* 크기 : 100 */
+}
+/* color */
+
+.c-name{
+    color: navy;
+}
+
+.c-16{
+    color: #dd882e;
+}
+
+.c-rgb{
+    color: rgb(68, 223, 78);
+    color: rgba(68, 223, 78, 0.45);
+}
+
+.c-hsl{
+    color: hsl(200, 50%, 50%);
+    color: hsla(200, 50%, 50%, 0.45);
+}
+
+.c-g{
+    color: hsl(226, 58%, 46%);}
+.c-o{
+    color: hsl(0, 93%, 47%);}
+
+.c-o2{
+    color: hsl(46, 78%, 52%);}
+.c-g2{
+    color: hsl(133, 93%, 45%);}
+
+
+.di{
+    padding:10px;}
+
+
+.form-item input:focus{
+        border-color:#0982f0;
+        outline: none;
+}
