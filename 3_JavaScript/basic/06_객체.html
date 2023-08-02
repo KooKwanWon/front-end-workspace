@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+        const age = 22
+        const person = {}
+        person.name = 'aaa';
+        person.age = '9'
+        person.hello = function() {
+            console.log(`안녕? 나는 ${this.name}이고, 나이는${this.age}살!`);
+
+        }
+        console.log(person);
+        person.hello();
+
+        console.log(window.name);
+
+        const person2 = {
+            name: 'xxx',
+            ager: 15,
+            hello: function(){
+                console.log(`안녕? 나는 ${this.name}이고, 나이는${this.age}살!`);
+            }
+        }
+        console.log(person);
+        person.hello();
+
+    </script>
+    <script>
+
+        function Person(name, age){
+            this.name = name;
+            this.age = age;
+            this.hello = function(){
+                console.log(`안녕? 나는 ${this.name}이고, 나이는${this.age}살!`);
+            }
+        }
+
+        const p1 = new Person('bbb', 2);
+        console.log(p1);
+        p1.hello();
+
+
+        function Person2(name, age){
+            this.name = name;
+            this.age = age;
+           
+        }
+
+        Person2.prototype.hello = function(){
+                console.log(`안녕? 나는 ${this.name}이고, 나이는${this.age}살!`);
+            }
+
+        const p2 = new Person2('ccc', 3);
+
+        console.log(p2);
+        p2.hello();
+
+    </script>
+
+    <script>
+        class Person3{
+            constructor(name, age){
+                this.name = name;
+                this.age = age;
+            }
+
+            hello(){
+                console.log(`안녕? 나는 ${this.name}이고, 나이는${this.age}살!`);
+            }
+        }
+
+        const p3 = new Person3('ddd', 4);
+        console.log(p3);
+        p3.hello();
+
+    </script>
+
+</body>
+</html>

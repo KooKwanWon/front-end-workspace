@@ -1,0 +1,15 @@
+#table_head {
+  background-color: orange;
+  color: white;
+  text-align: center;
+}
+
+#table_body {
+  background-color: rgb(248, 244, 189);
+}
+
+#form_font {
+  font-size: 12px;
+  text-align: center;
+  font-weight: bold;
+}

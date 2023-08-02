@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>UI 구현</title>
+    <link rel="stylesheet" href="../시험2/구관원.css" />
+  </head>
+  <body>
+    <form>
+      <fieldset class="fieldset">
+        <table>
+          <tr>
+            <td>아이디</td>
+            <td><input type="text" name="ID" id="ID" /></td>
+          </tr>
+          <tr>
+            <td id="PW">패스워드</td>
+            <td id="PW"><input type="password" id="PW" /></td>
+          </tr>
+          <tr>
+            <td>패스워드 확인</td>
+            <td>
+              <input type="password" id="PW2" /><br />
+              <p id="W"></p>
+            </td>
+          </tr>
+          <tr>
+            <td>이메일</td>
+            <td><input type="email" id="EMAIL" /></td>
+          </tr>
+          <tr>
+            <td>주소</td>
+            <td><input type="text" id="AD" /></td>
+          </tr>
+          <tr>
+            <td colspan="2">
+              <br /><br /><br />
+              <button id="btn1">가입</button>
+            </td>
+          </tr>
+        </table>
+      </fieldset>
+    </form>
+
+    <script>
+      const ID = document.querySelector("#ID");
+      // if(Id.){ID.getAttribute('text')};
+      ID.addEventListener("keyup", function () {
+        console.log("아");
+      });
+
+      const checkID = console.log(ID.s);
+
+      const W = document.querySelector("#W");
+      const PW = document.querySelector("#PW");
+      PW.addEventListener("click", function () {
+        console.log(ID.getElementsByTagName("content"));
+        console.log("아");
+        W.innerHTML("영문자 대/소문자 특수문자, 숫자 포함 8~32자");
+      });
+    </script>
+  </body>
+</html>

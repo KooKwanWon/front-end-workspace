@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<script>
+    
+    let age = 20;
+    
+    if(age > 19) {
+        
+        console.log("성인");
+    }
+    else{
+        console.log("미성년자");
+    }
+
+    const result = age > 19 ? "성인" : "미성년자";
+    console.log(result);
+
+    </script>    
+
+    <script>
+        if(age > 19){
+            console.log("성인");
+        }else if(age>13){
+            console.log("청소년");
+        }else if(age>7){
+            console.log("어린이");
+        }else{
+            console.log("유아");
+        }
+
+
+    </script>
+
+    <script>
+        const input = Number(prompt('숫자를 입력하세요'));
+        console.log(input);
+
+
+        switch (input%2) {
+         case 1:
+           console.log("홀수");
+           break;
+         case 0:
+           console.log("짝수");
+           break;
+         default:
+           console.log("숫자가 아닙니다.");;
+}
+    
+    </script>
+    
+
+    
+
+
+</body>
+</html>

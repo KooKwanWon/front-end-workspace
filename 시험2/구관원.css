@@ -1,0 +1,28 @@
+body {
+  background-color: lightblue;
+  margin-top: 50px;
+  display: flex;
+  justify-content: center;
+}
+.fieldset {
+  width: 400px;
+  height: 300px;
+  background-color: lightgray;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+.fieldset input {
+  background-color: lightgray;
+  border: 0px;
+  border-bottom: 1px dashed;
+}
+
+#btn1 {
+  border: 0px;
+  font-weight: bold;
+  width: 400px;
+  height: 50px;
+  background-color: rgb(62, 214, 62);
+}

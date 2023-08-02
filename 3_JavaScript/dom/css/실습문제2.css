@@ -1,0 +1,139 @@
+/* Style the header: fixed position (always stay at the top) */
+.header {
+    position: fixed;
+    top: 0;
+    z-index: 1;
+    width: 100%;
+    background-color: #F1F1F1;
+   }
+   /* The progress container (grey background) */
+   .progress-container {
+    width: 100%;
+    height: 8px;
+    background: #ccc;
+   }
+   /* The progress bar (scroll indicator) */
+   .progress-bar {
+    height: 8px;
+    background: #04AA6D;
+    width: 0%;
+   }
+
+
+header{
+    /* background-color: pink; */
+    background-color: white;
+    border-bottom: 1px solid #ddd;
+    position: fixed;
+    width: 100%;
+    height: 60px;
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+header h1{
+    font-size: 24px;
+    font-weight: bold;
+    margin-left: 20px;
+    line-height: 60px;
+}
+
+header nav{
+    margin-right: 20px;
+}
+
+header nav a{
+    margin-left: 35px;
+    text-decoration: none;
+    color: black;
+    line-height: 60px;
+    display: inline-block;
+    /* background-color: aqua; */
+    padding: 0 10px;
+}
+
+header nav a:hover{
+    color: tomato;
+}
+
+
+
+main{
+    padding-top: 60px;
+}
+
+main section{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;;
+}
+
+
+main #section1{
+    background-color: red;
+}
+
+main #section2{
+    background-color: purple;
+}
+
+main #section3{
+    background-color: yellow;
+}
+
+
+main section h2{
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+main section p{
+    width: 50%;
+    text-align: center;
+    line-height: 1.4rem;
+}
+
+main #top{
+    width: 90px;
+    height: 90px;
+    background-color: black;
+    /* color: white;  적용되진 않음*/
+    border-radius: 50%;
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+}
+
+
+main #top a{
+    /* display: inline-block; flex로 인해서 필요 없음*/
+    text-decoration: none;
+    font-weight: bold;
+    color: white;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.text-anmation{
+    animation: textAni 1s forwards;
+}
+
+
+@keyframes textAni{
+    from{
+        opacity: 0;
+        transform: translateY(0);
+    }
+    to{
+        opacity: 1;
+        transform: translateY(-10px);
+    }
+
+}

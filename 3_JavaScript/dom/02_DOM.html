@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="js/02_DOM.js"></script>
+    <title>Document</title>
+</head>
+<body>
+    <h2>1. 문서 객체 가져오기</h2>
+    <button onclick="btn1()">실행 확인</button>
+
+    <h3>2) id로 가져오기</h3>
+    <button onclick="btn2()">실행 확인</button>
+
+    <div id="testId">
+        Hello, World!
+    </div>
+
+    <h3>3) class로 가져오기</h3>
+    <button onclick="btn3()">실행 확인</button>
+
+    
+
+    <h3>6) 선택자로 가져오기 (추천!)</h3>
+    <button onclick="btn6()">실행 확인</button>
+
+    <h3> 내용 조작하기 </h3>
+    <button onclick="btn7()">실행 확인</button>
+
+    <div id="testId" class="testClass">
+        Hello, World!
+    </div>
+    <div id="testId2" class="testClass">
+        Hello, JavaScript!
+    </div>
+
+    <h3>속성 조작하기</h3>
+    <button onclick="btn8()">실행 확인</button>
+
+    <h3>스타일 조작하기</h3>
+    <button onclick="btn9()">실행 확인</button>
+
+    <div id="testId" class="testClass" name="testName">Hello, World!</div>
+    <div id="testId2" class="testClass" name="testName">Hello, JavaScript!</div>
+
+</body>
+</html>
