@@ -1,10 +1,10 @@
 import KakaoMap from "./components/KakaoMap";
-import DaumPostcode from "./components/DaumPostcode";
+import DaumPostCode from "./components/DaumPostCode";
 
 const App = () => {
   return (
     <>
-      <button onClick={DaumPostcode}>주소 검색</button>
+      <button onClick={DaumPostCode}>주소 검색</button>
       <KakaoMap />
     </>
   );
